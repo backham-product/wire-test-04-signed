@@ -1,0 +1,2576 @@
+{
+  "schemaVersion": 16,
+  "screens": [
+    {
+      "id": "s1",
+      "name": "ユーザー一覧",
+      "root": {
+        "id": "n2",
+        "type": "stack",
+        "name": "",
+        "layout": "flex",
+        "columns": 3,
+        "dir": "column",
+        "align": "stretch",
+        "justify": "start",
+        "wrap": false,
+        "size": "fill",
+        "width": null,
+        "pin": "none",
+        "link": null,
+        "note": "",
+        "states": [],
+        "classes": [],
+        "children": [
+          {
+            "id": "n136",
+            "type": "instance",
+            "component": "c135",
+            "size": "auto",
+            "width": null,
+            "pin": "none",
+            "link": null,
+            "note": "",
+            "classes": [],
+            "overrides": {},
+            "stateOverrides": {},
+            "propOverrides": {},
+            "listOverrides": {},
+            "linkOverrides": {},
+            "hiddenOverrides": {}
+          },
+          {
+            "id": "n11",
+            "type": "stack",
+            "name": "",
+            "layout": "flex",
+            "columns": 3,
+            "dir": "row",
+            "align": "stretch",
+            "justify": "start",
+            "wrap": false,
+            "size": "fill",
+            "width": null,
+            "pin": "none",
+            "link": null,
+            "note": "",
+            "states": [],
+            "classes": [],
+            "children": [
+              {
+                "id": "n138",
+                "type": "instance",
+                "component": "c137",
+                "size": "auto",
+                "width": 200,
+                "pin": "none",
+                "link": null,
+                "note": "",
+                "classes": [],
+                "overrides": {},
+                "stateOverrides": {},
+                "propOverrides": {},
+                "listOverrides": {},
+                "linkOverrides": {},
+                "hiddenOverrides": {}
+              },
+              {
+                "id": "n15",
+                "type": "stack",
+                "name": "",
+                "layout": "flex",
+                "columns": 3,
+                "dir": "column",
+                "align": "stretch",
+                "justify": "start",
+                "wrap": false,
+                "size": "fill",
+                "width": null,
+                "pin": "none",
+                "link": null,
+                "note": "",
+                "states": [],
+                "classes": [],
+                "children": [
+                  {
+                    "id": "n16",
+                    "type": "asset",
+                    "kind": "Breadcrumb",
+                    "name": "",
+                    "size": "auto",
+                    "width": null,
+                    "pin": "none",
+                    "link": null,
+                    "note": "",
+                    "states": [],
+                    "itemStates": {},
+                    "classes": [],
+                    "props": {},
+                    "text": {},
+                    "lists": {
+                      "items": [
+                        "ホーム",
+                        "ユーザー管理",
+                        "ユーザー一覧"
+                      ]
+                    },
+                    "grids": {},
+                    "slots": {}
+                  },
+                  {
+                    "id": "n17",
+                    "type": "stack",
+                    "name": "",
+                    "layout": "flex",
+                    "columns": 3,
+                    "dir": "row",
+                    "align": "center",
+                    "justify": "between",
+                    "wrap": false,
+                    "size": "auto",
+                    "width": null,
+                    "pin": "none",
+                    "link": null,
+                    "note": "",
+                    "states": [],
+                    "classes": [],
+                    "children": [
+                      {
+                        "id": "n18",
+                        "type": "asset",
+                        "kind": "Heading",
+                        "name": "",
+                        "size": "auto",
+                        "width": null,
+                        "pin": "none",
+                        "link": null,
+                        "note": "",
+                        "states": [],
+                        "itemStates": {},
+                        "classes": [],
+                        "props": {},
+                        "text": {
+                          "text": "ユーザー一覧"
+                        },
+                        "lists": {},
+                        "grids": {},
+                        "slots": {}
+                      },
+                      {
+                        "id": "n19",
+                        "type": "asset",
+                        "kind": "Button",
+                        "name": "",
+                        "size": "auto",
+                        "width": null,
+                        "pin": "none",
+                        "link": "s28",
+                        "note": "",
+                        "states": [],
+                        "itemStates": {},
+                        "classes": [],
+                        "props": {
+                          "variant": "primary",
+                          "icon": true
+                        },
+                        "text": {
+                          "label": "ユーザーを招待"
+                        },
+                        "lists": {},
+                        "grids": {},
+                        "slots": {}
+                      }
+                    ]
+                  },
+                  {
+                    "id": "n20",
+                    "type": "stack",
+                    "name": "",
+                    "layout": "flex",
+                    "columns": 3,
+                    "dir": "row",
+                    "align": "end",
+                    "justify": "start",
+                    "wrap": false,
+                    "size": "auto",
+                    "width": null,
+                    "pin": "none",
+                    "link": null,
+                    "note": "",
+                    "states": [],
+                    "classes": [],
+                    "children": [
+                      {
+                        "id": "n21",
+                        "type": "asset",
+                        "kind": "Input",
+                        "name": "",
+                        "size": "fill",
+                        "width": null,
+                        "pin": "none",
+                        "link": null,
+                        "note": "",
+                        "states": [],
+                        "itemStates": {},
+                        "classes": [],
+                        "props": {
+                          "required": false
+                        },
+                        "text": {
+                          "label": "キーワード",
+                          "placeholder": "名前・メールアドレスで検索",
+                          "help": "",
+                          "error": ""
+                        },
+                        "lists": {},
+                        "grids": {},
+                        "slots": {}
+                      },
+                      {
+                        "id": "n22",
+                        "type": "asset",
+                        "kind": "Select",
+                        "name": "",
+                        "size": "auto",
+                        "width": null,
+                        "pin": "none",
+                        "link": null,
+                        "note": "",
+                        "states": [],
+                        "itemStates": {},
+                        "classes": [],
+                        "props": {
+                          "required": false
+                        },
+                        "text": {
+                          "label": "ステータス",
+                          "placeholder": "すべて",
+                          "help": "",
+                          "error": ""
+                        },
+                        "lists": {
+                          "options": [
+                            "すべて",
+                            "有効",
+                            "招待中",
+                            "停止中"
+                          ]
+                        },
+                        "grids": {},
+                        "slots": {}
+                      },
+                      {
+                        "id": "n23",
+                        "type": "asset",
+                        "kind": "Button",
+                        "name": "",
+                        "size": "auto",
+                        "width": null,
+                        "pin": "none",
+                        "link": null,
+                        "note": "",
+                        "states": [],
+                        "itemStates": {},
+                        "classes": [],
+                        "props": {
+                          "variant": "secondary",
+                          "icon": false
+                        },
+                        "text": {
+                          "label": "検索"
+                        },
+                        "lists": {},
+                        "grids": {},
+                        "slots": {}
+                      }
+                    ]
+                  },
+                  {
+                    "id": "n24",
+                    "type": "asset",
+                    "kind": "Text",
+                    "name": "",
+                    "size": "auto",
+                    "width": null,
+                    "pin": "none",
+                    "link": null,
+                    "note": "",
+                    "states": [],
+                    "itemStates": {},
+                    "classes": [],
+                    "props": {},
+                    "text": {
+                      "text": "全 128 件中 1〜6 件を表示"
+                    },
+                    "lists": {},
+                    "grids": {},
+                    "slots": {}
+                  },
+                  {
+                    "id": "n25",
+                    "type": "asset",
+                    "kind": "Table",
+                    "name": "",
+                    "size": "auto",
+                    "width": null,
+                    "pin": "none",
+                    "link": "s28",
+                    "note": "",
+                    "states": [],
+                    "itemStates": {},
+                    "classes": [],
+                    "props": {},
+                    "text": {},
+                    "lists": {
+                      "columns": [
+                        "名前",
+                        "メールアドレス",
+                        "権限",
+                        "ステータス",
+                        "最終ログイン"
+                      ]
+                    },
+                    "grids": {
+                      "cells": [
+                        [
+                          "山田 太郎",
+                          "taro.yamada@example.co.jp",
+                          "管理者",
+                          "有効",
+                          "2026/11/13 09:12"
+                        ],
+                        [
+                          "佐藤 花子",
+                          "hanako.sato@example.co.jp",
+                          "編集者",
+                          "有効",
+                          "2026/11/12 18:42"
+                        ],
+                        [
+                          "鈴木 一郎",
+                          "ichiro.suzuki@example.co.jp",
+                          "閲覧者",
+                          "招待中",
+                          "-"
+                        ],
+                        [
+                          "高橋 美咲",
+                          "misaki.takahashi@example.co.jp",
+                          "編集者",
+                          "有効",
+                          "2026/11/10 14:05"
+                        ],
+                        [
+                          "田中 健太",
+                          "kenta.tanaka@example.co.jp",
+                          "閲覧者",
+                          "停止中",
+                          "2026/09/30 11:20"
+                        ],
+                        [
+                          "伊藤 さくら",
+                          "sakura.ito@example.co.jp",
+                          "閲覧者",
+                          "有効",
+                          "2026/11/08 08:57"
+                        ]
+                      ]
+                    },
+                    "slots": {}
+                  },
+                  {
+                    "id": "n26",
+                    "type": "stack",
+                    "name": "",
+                    "layout": "flex",
+                    "columns": 3,
+                    "dir": "row",
+                    "align": "stretch",
+                    "justify": "center",
+                    "wrap": false,
+                    "size": "auto",
+                    "width": null,
+                    "pin": "none",
+                    "link": null,
+                    "note": "",
+                    "states": [],
+                    "classes": [],
+                    "children": [
+                      {
+                        "id": "n27",
+                        "type": "asset",
+                        "kind": "Pagination",
+                        "name": "",
+                        "size": "auto",
+                        "width": null,
+                        "pin": "none",
+                        "link": null,
+                        "note": "",
+                        "states": [],
+                        "itemStates": {},
+                        "classes": [],
+                        "props": {},
+                        "text": {},
+                        "lists": {},
+                        "grids": {},
+                        "slots": {}
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "modals": []
+    },
+    {
+      "id": "s28",
+      "name": "ユーザー編集",
+      "root": {
+        "id": "n29",
+        "type": "stack",
+        "name": "",
+        "layout": "flex",
+        "columns": 3,
+        "dir": "column",
+        "align": "stretch",
+        "justify": "start",
+        "wrap": false,
+        "size": "fill",
+        "width": null,
+        "pin": "none",
+        "link": null,
+        "note": "",
+        "states": [],
+        "classes": [],
+        "children": [
+          {
+            "id": "n139",
+            "type": "instance",
+            "component": "c135",
+            "size": "auto",
+            "width": null,
+            "pin": "none",
+            "link": null,
+            "note": "",
+            "classes": [],
+            "overrides": {},
+            "stateOverrides": {},
+            "propOverrides": {},
+            "listOverrides": {},
+            "linkOverrides": {},
+            "hiddenOverrides": {}
+          },
+          {
+            "id": "n38",
+            "type": "stack",
+            "name": "",
+            "layout": "flex",
+            "columns": 3,
+            "dir": "row",
+            "align": "stretch",
+            "justify": "start",
+            "wrap": false,
+            "size": "fill",
+            "width": null,
+            "pin": "none",
+            "link": null,
+            "note": "",
+            "states": [],
+            "classes": [],
+            "children": [
+              {
+                "id": "n140",
+                "type": "instance",
+                "component": "c137",
+                "size": "auto",
+                "width": 200,
+                "pin": "none",
+                "link": null,
+                "note": "",
+                "classes": [],
+                "overrides": {},
+                "stateOverrides": {},
+                "propOverrides": {},
+                "listOverrides": {},
+                "linkOverrides": {},
+                "hiddenOverrides": {}
+              },
+              {
+                "id": "n42",
+                "type": "stack",
+                "name": "",
+                "layout": "flex",
+                "columns": 3,
+                "dir": "column",
+                "align": "stretch",
+                "justify": "start",
+                "wrap": false,
+                "size": "fill",
+                "width": null,
+                "pin": "none",
+                "link": null,
+                "note": "",
+                "states": [],
+                "classes": [],
+                "children": [
+                  {
+                    "id": "n43",
+                    "type": "asset",
+                    "kind": "Breadcrumb",
+                    "name": "",
+                    "size": "auto",
+                    "width": null,
+                    "pin": "none",
+                    "link": null,
+                    "note": "",
+                    "states": [],
+                    "itemStates": {},
+                    "classes": [],
+                    "props": {},
+                    "text": {},
+                    "lists": {
+                      "items": [
+                        "ホーム",
+                        "ユーザー管理",
+                        "ユーザー一覧",
+                        "佐藤 花子"
+                      ]
+                    },
+                    "grids": {},
+                    "slots": {}
+                  },
+                  {
+                    "id": "n44",
+                    "type": "stack",
+                    "name": "",
+                    "layout": "flex",
+                    "columns": 3,
+                    "dir": "row",
+                    "align": "center",
+                    "justify": "between",
+                    "wrap": false,
+                    "size": "auto",
+                    "width": null,
+                    "pin": "none",
+                    "link": null,
+                    "note": "",
+                    "states": [],
+                    "classes": [],
+                    "children": [
+                      {
+                        "id": "n45",
+                        "type": "asset",
+                        "kind": "Heading",
+                        "name": "",
+                        "size": "auto",
+                        "width": null,
+                        "pin": "none",
+                        "link": null,
+                        "note": "",
+                        "states": [],
+                        "itemStates": {},
+                        "classes": [],
+                        "props": {},
+                        "text": {
+                          "text": "ユーザー編集"
+                        },
+                        "lists": {},
+                        "grids": {},
+                        "slots": {}
+                      },
+                      {
+                        "id": "n46",
+                        "type": "asset",
+                        "kind": "Link",
+                        "name": "",
+                        "size": "auto",
+                        "width": null,
+                        "pin": "none",
+                        "link": "s1",
+                        "note": "",
+                        "states": [],
+                        "itemStates": {},
+                        "classes": [],
+                        "props": {},
+                        "text": {
+                          "label": "ユーザー一覧に戻る"
+                        },
+                        "lists": {},
+                        "grids": {},
+                        "slots": {}
+                      }
+                    ]
+                  },
+                  {
+                    "id": "n47",
+                    "type": "asset",
+                    "kind": "Card",
+                    "name": "",
+                    "size": "auto",
+                    "width": null,
+                    "pin": "none",
+                    "link": null,
+                    "note": "",
+                    "states": [],
+                    "itemStates": {},
+                    "classes": [],
+                    "props": {},
+                    "text": {},
+                    "lists": {},
+                    "grids": {},
+                    "slots": {
+                      "content": {
+                        "id": "n48",
+                        "type": "stack",
+                        "name": "",
+                        "layout": "flex",
+                        "columns": 3,
+                        "dir": "row",
+                        "align": "center",
+                        "justify": "start",
+                        "wrap": false,
+                        "size": "fill",
+                        "width": null,
+                        "pin": "none",
+                        "link": null,
+                        "note": "",
+                        "states": [],
+                        "classes": [],
+                        "children": [
+                          {
+                            "id": "n49",
+                            "type": "asset",
+                            "kind": "Image",
+                            "name": "",
+                            "size": "auto",
+                            "width": null,
+                            "pin": "none",
+                            "link": null,
+                            "note": "",
+                            "states": [],
+                            "itemStates": {},
+                            "classes": [],
+                            "props": {
+                              "ratio": "1:1"
+                            },
+                            "text": {},
+                            "lists": {},
+                            "grids": {},
+                            "slots": {}
+                          },
+                          {
+                            "id": "n50",
+                            "type": "stack",
+                            "name": "",
+                            "layout": "flex",
+                            "columns": 3,
+                            "dir": "column",
+                            "align": "stretch",
+                            "justify": "start",
+                            "wrap": false,
+                            "size": "fill",
+                            "width": null,
+                            "pin": "none",
+                            "link": null,
+                            "note": "",
+                            "states": [],
+                            "classes": [],
+                            "children": [
+                              {
+                                "id": "n51",
+                                "type": "asset",
+                                "kind": "Heading",
+                                "name": "",
+                                "size": "auto",
+                                "width": null,
+                                "pin": "none",
+                                "link": null,
+                                "note": "",
+                                "states": [],
+                                "itemStates": {},
+                                "classes": [],
+                                "props": {},
+                                "text": {
+                                  "text": "佐藤 花子"
+                                },
+                                "lists": {},
+                                "grids": {},
+                                "slots": {}
+                              },
+                              {
+                                "id": "n52",
+                                "type": "asset",
+                                "kind": "Text",
+                                "name": "",
+                                "size": "auto",
+                                "width": null,
+                                "pin": "none",
+                                "link": null,
+                                "note": "",
+                                "states": [],
+                                "itemStates": {},
+                                "classes": [],
+                                "props": {},
+                                "text": {
+                                  "text": "登録日：2024年4月1日\n最終ログイン：2026年11月12日 18:42"
+                                },
+                                "lists": {},
+                                "grids": {},
+                                "slots": {}
+                              }
+                            ]
+                          },
+                          {
+                            "id": "n53",
+                            "type": "asset",
+                            "kind": "Button",
+                            "name": "",
+                            "size": "auto",
+                            "width": null,
+                            "pin": "none",
+                            "link": null,
+                            "note": "",
+                            "states": [],
+                            "itemStates": {},
+                            "classes": [],
+                            "props": {
+                              "variant": "secondary",
+                              "icon": false
+                            },
+                            "text": {
+                              "label": "画像を変更"
+                            },
+                            "lists": {},
+                            "grids": {},
+                            "slots": {}
+                          }
+                        ]
+                      }
+                    }
+                  },
+                  {
+                    "id": "n54",
+                    "type": "asset",
+                    "kind": "Form",
+                    "name": "",
+                    "size": "auto",
+                    "width": null,
+                    "pin": "none",
+                    "link": null,
+                    "note": "",
+                    "states": [],
+                    "itemStates": {},
+                    "classes": [],
+                    "props": {},
+                    "text": {},
+                    "lists": {},
+                    "grids": {},
+                    "slots": {
+                      "content": {
+                        "id": "n55",
+                        "type": "stack",
+                        "name": "",
+                        "layout": "flex",
+                        "columns": 3,
+                        "dir": "column",
+                        "align": "stretch",
+                        "justify": "start",
+                        "wrap": false,
+                        "size": "fill",
+                        "width": null,
+                        "pin": "none",
+                        "link": null,
+                        "note": "",
+                        "states": [],
+                        "classes": [],
+                        "children": [
+                          {
+                            "id": "n56",
+                            "type": "stack",
+                            "name": "",
+                            "layout": "flex",
+                            "columns": 3,
+                            "dir": "row",
+                            "align": "stretch",
+                            "justify": "start",
+                            "wrap": false,
+                            "size": "auto",
+                            "width": null,
+                            "pin": "none",
+                            "link": null,
+                            "note": "",
+                            "states": [],
+                            "classes": [],
+                            "children": [
+                              {
+                                "id": "n57",
+                                "type": "asset",
+                                "kind": "Input",
+                                "name": "",
+                                "size": "fill",
+                                "width": null,
+                                "pin": "none",
+                                "link": null,
+                                "note": "",
+                                "states": [],
+                                "itemStates": {},
+                                "classes": [],
+                                "props": {
+                                  "required": true
+                                },
+                                "text": {
+                                  "label": "氏名",
+                                  "placeholder": "例：山田 太郎",
+                                  "help": "",
+                                  "error": ""
+                                },
+                                "lists": {},
+                                "grids": {},
+                                "slots": {}
+                              },
+                              {
+                                "id": "n58",
+                                "type": "asset",
+                                "kind": "Input",
+                                "name": "",
+                                "size": "fill",
+                                "width": null,
+                                "pin": "none",
+                                "link": null,
+                                "note": "",
+                                "states": [],
+                                "itemStates": {},
+                                "classes": [],
+                                "props": {
+                                  "required": false
+                                },
+                                "text": {
+                                  "label": "氏名（フリガナ）",
+                                  "placeholder": "例：ヤマダ タロウ",
+                                  "help": "",
+                                  "error": ""
+                                },
+                                "lists": {},
+                                "grids": {},
+                                "slots": {}
+                              }
+                            ]
+                          },
+                          {
+                            "id": "n59",
+                            "type": "asset",
+                            "kind": "Input",
+                            "name": "",
+                            "size": "auto",
+                            "width": null,
+                            "pin": "none",
+                            "link": null,
+                            "note": "",
+                            "states": [],
+                            "itemStates": {},
+                            "classes": [],
+                            "props": {
+                              "required": true
+                            },
+                            "text": {
+                              "label": "メールアドレス",
+                              "placeholder": "例：taro.yamada@example.co.jp",
+                              "help": "ログインIDとして使います",
+                              "error": "このメールアドレスは既に登録されています"
+                            },
+                            "lists": {},
+                            "grids": {},
+                            "slots": {}
+                          },
+                          {
+                            "id": "n60",
+                            "type": "asset",
+                            "kind": "Select",
+                            "name": "",
+                            "size": "auto",
+                            "width": null,
+                            "pin": "none",
+                            "link": null,
+                            "note": "",
+                            "states": [],
+                            "itemStates": {},
+                            "classes": [],
+                            "props": {
+                              "required": true
+                            },
+                            "text": {
+                              "label": "権限",
+                              "placeholder": "選択してください",
+                              "help": "権限によって、操作できるメニューが変わります",
+                              "error": ""
+                            },
+                            "lists": {
+                              "options": [
+                                "管理者",
+                                "編集者",
+                                "閲覧者"
+                              ]
+                            },
+                            "grids": {},
+                            "slots": {}
+                          },
+                          {
+                            "id": "n61",
+                            "type": "asset",
+                            "kind": "Radio",
+                            "name": "",
+                            "size": "auto",
+                            "width": null,
+                            "pin": "none",
+                            "link": null,
+                            "note": "",
+                            "states": [],
+                            "itemStates": {},
+                            "classes": [],
+                            "props": {
+                              "required": true
+                            },
+                            "text": {
+                              "label": "ステータス",
+                              "help": "",
+                              "error": ""
+                            },
+                            "lists": {
+                              "options": [
+                                "有効",
+                                "停止中"
+                              ]
+                            },
+                            "grids": {},
+                            "slots": {}
+                          },
+                          {
+                            "id": "n62",
+                            "type": "asset",
+                            "kind": "Checkbox",
+                            "name": "",
+                            "size": "auto",
+                            "width": null,
+                            "pin": "none",
+                            "link": null,
+                            "note": "",
+                            "states": [],
+                            "itemStates": {},
+                            "classes": [],
+                            "props": {
+                              "required": false
+                            },
+                            "text": {
+                              "label": "通知メール",
+                              "help": "選んだ種類のお知らせをメールで受け取ります",
+                              "error": ""
+                            },
+                            "lists": {
+                              "options": [
+                                "お知らせ",
+                                "セキュリティ通知",
+                                "週次レポート"
+                              ]
+                            },
+                            "grids": {},
+                            "slots": {}
+                          },
+                          {
+                            "id": "n63",
+                            "type": "asset",
+                            "kind": "Toggle",
+                            "name": "",
+                            "size": "auto",
+                            "width": null,
+                            "pin": "none",
+                            "link": null,
+                            "note": "",
+                            "states": [],
+                            "itemStates": {},
+                            "classes": [],
+                            "props": {
+                              "required": false
+                            },
+                            "text": {
+                              "label": "二段階認証を必須にする",
+                              "help": "オンにすると、次回のログイン時に設定を求めます",
+                              "error": ""
+                            },
+                            "lists": {},
+                            "grids": {},
+                            "slots": {}
+                          },
+                          {
+                            "id": "n64",
+                            "type": "asset",
+                            "kind": "Textarea",
+                            "name": "",
+                            "size": "auto",
+                            "width": null,
+                            "pin": "none",
+                            "link": null,
+                            "note": "",
+                            "states": [],
+                            "itemStates": {},
+                            "classes": [],
+                            "props": {
+                              "required": false
+                            },
+                            "text": {
+                              "label": "メモ",
+                              "placeholder": "社内向けのメモを入力（ユーザーには表示されません）",
+                              "help": "",
+                              "error": ""
+                            },
+                            "lists": {},
+                            "grids": {},
+                            "slots": {}
+                          },
+                          {
+                            "id": "n65",
+                            "type": "stack",
+                            "name": "",
+                            "layout": "flex",
+                            "columns": 3,
+                            "dir": "row",
+                            "align": "stretch",
+                            "justify": "end",
+                            "wrap": false,
+                            "size": "auto",
+                            "width": null,
+                            "pin": "none",
+                            "link": null,
+                            "note": "",
+                            "states": [],
+                            "classes": [],
+                            "children": [
+                              {
+                                "id": "n66",
+                                "type": "asset",
+                                "kind": "Button",
+                                "name": "",
+                                "size": "auto",
+                                "width": null,
+                                "pin": "none",
+                                "link": "s1",
+                                "note": "",
+                                "states": [],
+                                "itemStates": {},
+                                "classes": [],
+                                "props": {
+                                  "variant": "secondary",
+                                  "icon": false
+                                },
+                                "text": {
+                                  "label": "キャンセル"
+                                },
+                                "lists": {},
+                                "grids": {},
+                                "slots": {}
+                              },
+                              {
+                                "id": "n67",
+                                "type": "asset",
+                                "kind": "Button",
+                                "name": "",
+                                "size": "auto",
+                                "width": null,
+                                "pin": "none",
+                                "link": null,
+                                "note": "",
+                                "states": [],
+                                "itemStates": {},
+                                "classes": [],
+                                "props": {
+                                  "variant": "primary",
+                                  "icon": false
+                                },
+                                "text": {
+                                  "label": "保存する"
+                                },
+                                "lists": {},
+                                "grids": {},
+                                "slots": {}
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    }
+                  },
+                  {
+                    "id": "n68",
+                    "type": "asset",
+                    "kind": "Card",
+                    "name": "",
+                    "size": "auto",
+                    "width": null,
+                    "pin": "none",
+                    "link": null,
+                    "note": "",
+                    "states": [],
+                    "itemStates": {},
+                    "classes": [],
+                    "props": {},
+                    "text": {},
+                    "lists": {},
+                    "grids": {},
+                    "slots": {
+                      "content": {
+                        "id": "n69",
+                        "type": "stack",
+                        "name": "",
+                        "layout": "flex",
+                        "columns": 3,
+                        "dir": "column",
+                        "align": "stretch",
+                        "justify": "start",
+                        "wrap": false,
+                        "size": "fill",
+                        "width": null,
+                        "pin": "none",
+                        "link": null,
+                        "note": "",
+                        "states": [],
+                        "classes": [],
+                        "children": [
+                          {
+                            "id": "n70",
+                            "type": "asset",
+                            "kind": "Heading",
+                            "name": "",
+                            "size": "auto",
+                            "width": null,
+                            "pin": "none",
+                            "link": null,
+                            "note": "",
+                            "states": [],
+                            "itemStates": {},
+                            "classes": [],
+                            "props": {},
+                            "text": {
+                              "text": "ユーザーの削除"
+                            },
+                            "lists": {},
+                            "grids": {},
+                            "slots": {}
+                          },
+                          {
+                            "id": "n71",
+                            "type": "asset",
+                            "kind": "Text",
+                            "name": "",
+                            "size": "auto",
+                            "width": null,
+                            "pin": "none",
+                            "link": null,
+                            "note": "",
+                            "states": [],
+                            "itemStates": {},
+                            "classes": [],
+                            "props": {},
+                            "text": {
+                              "text": "削除すると、このユーザーはログインできなくなります。\nこの操作は取り消せません。"
+                            },
+                            "lists": {},
+                            "grids": {},
+                            "slots": {}
+                          },
+                          {
+                            "id": "n72",
+                            "type": "stack",
+                            "name": "",
+                            "layout": "flex",
+                            "columns": 3,
+                            "dir": "row",
+                            "align": "stretch",
+                            "justify": "start",
+                            "wrap": false,
+                            "size": "auto",
+                            "width": null,
+                            "pin": "none",
+                            "link": null,
+                            "note": "",
+                            "states": [],
+                            "classes": [],
+                            "children": [
+                              {
+                                "id": "n73",
+                                "type": "asset",
+                                "kind": "Button",
+                                "name": "",
+                                "size": "auto",
+                                "width": null,
+                                "pin": "none",
+                                "link": null,
+                                "note": "",
+                                "states": [],
+                                "itemStates": {},
+                                "classes": [],
+                                "props": {
+                                  "variant": "secondary",
+                                  "icon": false
+                                },
+                                "text": {
+                                  "label": "ユーザーを削除"
+                                },
+                                "lists": {},
+                                "grids": {},
+                                "slots": {}
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    }
+                  },
+                  {
+                    "id": "n74",
+                    "type": "asset",
+                    "kind": "Modal",
+                    "name": "",
+                    "size": "auto",
+                    "width": null,
+                    "pin": "none",
+                    "link": null,
+                    "note": "",
+                    "states": [],
+                    "itemStates": {},
+                    "classes": [],
+                    "props": {},
+                    "text": {
+                      "title": "ユーザーを削除しますか？"
+                    },
+                    "lists": {},
+                    "grids": {},
+                    "slots": {
+                      "content": {
+                        "id": "n75",
+                        "type": "stack",
+                        "name": "",
+                        "layout": "flex",
+                        "columns": 3,
+                        "dir": "column",
+                        "align": "stretch",
+                        "justify": "start",
+                        "wrap": false,
+                        "size": "fill",
+                        "width": null,
+                        "pin": "none",
+                        "link": null,
+                        "note": "",
+                        "states": [],
+                        "classes": [],
+                        "children": [
+                          {
+                            "id": "n76",
+                            "type": "asset",
+                            "kind": "Text",
+                            "name": "",
+                            "size": "auto",
+                            "width": null,
+                            "pin": "none",
+                            "link": null,
+                            "note": "",
+                            "states": [],
+                            "itemStates": {},
+                            "classes": [],
+                            "props": {},
+                            "text": {
+                              "text": "佐藤 花子 さんを削除します。この操作は取り消せません。"
+                            },
+                            "lists": {},
+                            "grids": {},
+                            "slots": {}
+                          },
+                          {
+                            "id": "n77",
+                            "type": "stack",
+                            "name": "",
+                            "layout": "flex",
+                            "columns": 3,
+                            "dir": "row",
+                            "align": "stretch",
+                            "justify": "end",
+                            "wrap": false,
+                            "size": "auto",
+                            "width": null,
+                            "pin": "none",
+                            "link": null,
+                            "note": "",
+                            "states": [],
+                            "classes": [],
+                            "children": [
+                              {
+                                "id": "n78",
+                                "type": "asset",
+                                "kind": "Button",
+                                "name": "",
+                                "size": "auto",
+                                "width": null,
+                                "pin": "none",
+                                "link": null,
+                                "note": "",
+                                "states": [],
+                                "itemStates": {},
+                                "classes": [],
+                                "props": {
+                                  "variant": "secondary",
+                                  "icon": false
+                                },
+                                "text": {
+                                  "label": "キャンセル"
+                                },
+                                "lists": {},
+                                "grids": {},
+                                "slots": {}
+                              },
+                              {
+                                "id": "n79",
+                                "type": "asset",
+                                "kind": "Button",
+                                "name": "",
+                                "size": "auto",
+                                "width": null,
+                                "pin": "none",
+                                "link": null,
+                                "note": "",
+                                "states": [],
+                                "itemStates": {},
+                                "classes": [],
+                                "props": {
+                                  "variant": "primary",
+                                  "icon": false
+                                },
+                                "text": {
+                                  "label": "削除する"
+                                },
+                                "lists": {},
+                                "grids": {},
+                                "slots": {}
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "modals": []
+    },
+    {
+      "id": "s80",
+      "name": "ダッシュボード",
+      "root": {
+        "id": "n81",
+        "type": "stack",
+        "name": "",
+        "layout": "flex",
+        "columns": 3,
+        "dir": "column",
+        "align": "stretch",
+        "justify": "start",
+        "wrap": false,
+        "size": "fill",
+        "width": null,
+        "pin": "none",
+        "link": null,
+        "note": "",
+        "states": [],
+        "classes": [],
+        "children": [
+          {
+            "id": "n141",
+            "type": "instance",
+            "component": "c135",
+            "size": "auto",
+            "width": null,
+            "pin": "none",
+            "link": null,
+            "note": "",
+            "classes": [],
+            "overrides": {},
+            "stateOverrides": {},
+            "propOverrides": {},
+            "listOverrides": {},
+            "linkOverrides": {},
+            "hiddenOverrides": {}
+          },
+          {
+            "id": "n90",
+            "type": "stack",
+            "name": "",
+            "layout": "flex",
+            "columns": 3,
+            "dir": "row",
+            "align": "stretch",
+            "justify": "start",
+            "wrap": false,
+            "size": "fill",
+            "width": null,
+            "pin": "none",
+            "link": null,
+            "note": "",
+            "states": [],
+            "classes": [],
+            "children": [
+              {
+                "id": "n142",
+                "type": "instance",
+                "component": "c137",
+                "size": "auto",
+                "width": 200,
+                "pin": "none",
+                "link": null,
+                "note": "",
+                "classes": [],
+                "overrides": {},
+                "stateOverrides": {},
+                "propOverrides": {},
+                "listOverrides": {},
+                "linkOverrides": {},
+                "hiddenOverrides": {}
+              },
+              {
+                "id": "n94",
+                "type": "stack",
+                "name": "",
+                "layout": "flex",
+                "columns": 3,
+                "dir": "column",
+                "align": "stretch",
+                "justify": "start",
+                "wrap": false,
+                "size": "fill",
+                "width": null,
+                "pin": "none",
+                "link": null,
+                "note": "",
+                "states": [],
+                "classes": [],
+                "children": [
+                  {
+                    "id": "n95",
+                    "type": "stack",
+                    "name": "",
+                    "layout": "flex",
+                    "columns": 3,
+                    "dir": "row",
+                    "align": "center",
+                    "justify": "between",
+                    "wrap": false,
+                    "size": "auto",
+                    "width": null,
+                    "pin": "none",
+                    "link": null,
+                    "note": "",
+                    "states": [],
+                    "classes": [],
+                    "children": [
+                      {
+                        "id": "n96",
+                        "type": "asset",
+                        "kind": "Heading",
+                        "name": "",
+                        "size": "auto",
+                        "width": null,
+                        "pin": "none",
+                        "link": null,
+                        "note": "",
+                        "states": [],
+                        "itemStates": {},
+                        "classes": [],
+                        "props": {},
+                        "text": {
+                          "text": "ダッシュボード"
+                        },
+                        "lists": {},
+                        "grids": {},
+                        "slots": {}
+                      },
+                      {
+                        "id": "n97",
+                        "type": "asset",
+                        "kind": "Text",
+                        "name": "",
+                        "size": "auto",
+                        "width": null,
+                        "pin": "none",
+                        "link": null,
+                        "note": "",
+                        "states": [],
+                        "itemStates": {},
+                        "classes": [],
+                        "props": {},
+                        "text": {
+                          "text": "2026年11月13日 9:00 時点"
+                        },
+                        "lists": {},
+                        "grids": {},
+                        "slots": {}
+                      }
+                    ]
+                  },
+                  {
+                    "id": "n98",
+                    "type": "stack",
+                    "name": "",
+                    "layout": "grid",
+                    "columns": 4,
+                    "dir": "row",
+                    "align": "stretch",
+                    "justify": "start",
+                    "wrap": false,
+                    "size": "auto",
+                    "width": null,
+                    "pin": "none",
+                    "link": null,
+                    "note": "",
+                    "states": [],
+                    "classes": [],
+                    "children": [
+                      {
+                        "id": "n99",
+                        "type": "asset",
+                        "kind": "Card",
+                        "name": "",
+                        "size": "fill",
+                        "width": null,
+                        "pin": "none",
+                        "link": "s1",
+                        "note": "",
+                        "states": [],
+                        "itemStates": {},
+                        "classes": [],
+                        "props": {},
+                        "text": {},
+                        "lists": {},
+                        "grids": {},
+                        "slots": {
+                          "content": {
+                            "id": "n100",
+                            "type": "stack",
+                            "name": "",
+                            "layout": "flex",
+                            "columns": 3,
+                            "dir": "column",
+                            "align": "stretch",
+                            "justify": "start",
+                            "wrap": false,
+                            "size": "fill",
+                            "width": null,
+                            "pin": "none",
+                            "link": null,
+                            "note": "",
+                            "states": [],
+                            "classes": [],
+                            "children": [
+                              {
+                                "id": "n101",
+                                "type": "asset",
+                                "kind": "Text",
+                                "name": "",
+                                "size": "auto",
+                                "width": null,
+                                "pin": "none",
+                                "link": null,
+                                "note": "",
+                                "states": [],
+                                "itemStates": {},
+                                "classes": [],
+                                "props": {},
+                                "text": {
+                                  "text": "総ユーザー数"
+                                },
+                                "lists": {},
+                                "grids": {},
+                                "slots": {}
+                              },
+                              {
+                                "id": "n102",
+                                "type": "asset",
+                                "kind": "Heading",
+                                "name": "",
+                                "size": "auto",
+                                "width": null,
+                                "pin": "none",
+                                "link": null,
+                                "note": "",
+                                "states": [],
+                                "itemStates": {},
+                                "classes": [],
+                                "props": {},
+                                "text": {
+                                  "text": "1,284"
+                                },
+                                "lists": {},
+                                "grids": {},
+                                "slots": {}
+                              },
+                              {
+                                "id": "n103",
+                                "type": "asset",
+                                "kind": "Badge",
+                                "name": "",
+                                "size": "auto",
+                                "width": null,
+                                "pin": "none",
+                                "link": null,
+                                "note": "",
+                                "states": [],
+                                "itemStates": {},
+                                "classes": [],
+                                "props": {},
+                                "text": {
+                                  "label": "前月比 +3.2%"
+                                },
+                                "lists": {},
+                                "grids": {},
+                                "slots": {}
+                              }
+                            ]
+                          }
+                        }
+                      },
+                      {
+                        "id": "n104",
+                        "type": "asset",
+                        "kind": "Card",
+                        "name": "",
+                        "size": "fill",
+                        "width": null,
+                        "pin": "none",
+                        "link": null,
+                        "note": "",
+                        "states": [],
+                        "itemStates": {},
+                        "classes": [],
+                        "props": {},
+                        "text": {},
+                        "lists": {},
+                        "grids": {},
+                        "slots": {
+                          "content": {
+                            "id": "n105",
+                            "type": "stack",
+                            "name": "",
+                            "layout": "flex",
+                            "columns": 3,
+                            "dir": "column",
+                            "align": "stretch",
+                            "justify": "start",
+                            "wrap": false,
+                            "size": "fill",
+                            "width": null,
+                            "pin": "none",
+                            "link": null,
+                            "note": "",
+                            "states": [],
+                            "classes": [],
+                            "children": [
+                              {
+                                "id": "n106",
+                                "type": "asset",
+                                "kind": "Text",
+                                "name": "",
+                                "size": "auto",
+                                "width": null,
+                                "pin": "none",
+                                "link": null,
+                                "note": "",
+                                "states": [],
+                                "itemStates": {},
+                                "classes": [],
+                                "props": {},
+                                "text": {
+                                  "text": "アクティブユーザー（30日）"
+                                },
+                                "lists": {},
+                                "grids": {},
+                                "slots": {}
+                              },
+                              {
+                                "id": "n107",
+                                "type": "asset",
+                                "kind": "Heading",
+                                "name": "",
+                                "size": "auto",
+                                "width": null,
+                                "pin": "none",
+                                "link": null,
+                                "note": "",
+                                "states": [],
+                                "itemStates": {},
+                                "classes": [],
+                                "props": {},
+                                "text": {
+                                  "text": "962"
+                                },
+                                "lists": {},
+                                "grids": {},
+                                "slots": {}
+                              },
+                              {
+                                "id": "n108",
+                                "type": "asset",
+                                "kind": "Badge",
+                                "name": "",
+                                "size": "auto",
+                                "width": null,
+                                "pin": "none",
+                                "link": null,
+                                "note": "",
+                                "states": [],
+                                "itemStates": {},
+                                "classes": [],
+                                "props": {},
+                                "text": {
+                                  "label": "前月比 +5.1%"
+                                },
+                                "lists": {},
+                                "grids": {},
+                                "slots": {}
+                              }
+                            ]
+                          }
+                        }
+                      },
+                      {
+                        "id": "n109",
+                        "type": "asset",
+                        "kind": "Card",
+                        "name": "",
+                        "size": "fill",
+                        "width": null,
+                        "pin": "none",
+                        "link": null,
+                        "note": "",
+                        "states": [],
+                        "itemStates": {},
+                        "classes": [],
+                        "props": {},
+                        "text": {},
+                        "lists": {},
+                        "grids": {},
+                        "slots": {
+                          "content": {
+                            "id": "n110",
+                            "type": "stack",
+                            "name": "",
+                            "layout": "flex",
+                            "columns": 3,
+                            "dir": "column",
+                            "align": "stretch",
+                            "justify": "start",
+                            "wrap": false,
+                            "size": "fill",
+                            "width": null,
+                            "pin": "none",
+                            "link": null,
+                            "note": "",
+                            "states": [],
+                            "classes": [],
+                            "children": [
+                              {
+                                "id": "n111",
+                                "type": "asset",
+                                "kind": "Text",
+                                "name": "",
+                                "size": "auto",
+                                "width": null,
+                                "pin": "none",
+                                "link": null,
+                                "note": "",
+                                "states": [],
+                                "itemStates": {},
+                                "classes": [],
+                                "props": {},
+                                "text": {
+                                  "text": "今月の新規登録"
+                                },
+                                "lists": {},
+                                "grids": {},
+                                "slots": {}
+                              },
+                              {
+                                "id": "n112",
+                                "type": "asset",
+                                "kind": "Heading",
+                                "name": "",
+                                "size": "auto",
+                                "width": null,
+                                "pin": "none",
+                                "link": null,
+                                "note": "",
+                                "states": [],
+                                "itemStates": {},
+                                "classes": [],
+                                "props": {},
+                                "text": {
+                                  "text": "48"
+                                },
+                                "lists": {},
+                                "grids": {},
+                                "slots": {}
+                              },
+                              {
+                                "id": "n113",
+                                "type": "asset",
+                                "kind": "Badge",
+                                "name": "",
+                                "size": "auto",
+                                "width": null,
+                                "pin": "none",
+                                "link": null,
+                                "note": "",
+                                "states": [],
+                                "itemStates": {},
+                                "classes": [],
+                                "props": {},
+                                "text": {
+                                  "label": "前月比 +12件"
+                                },
+                                "lists": {},
+                                "grids": {},
+                                "slots": {}
+                              }
+                            ]
+                          }
+                        }
+                      },
+                      {
+                        "id": "n114",
+                        "type": "asset",
+                        "kind": "Card",
+                        "name": "",
+                        "size": "fill",
+                        "width": null,
+                        "pin": "none",
+                        "link": null,
+                        "note": "",
+                        "states": [],
+                        "itemStates": {},
+                        "classes": [],
+                        "props": {},
+                        "text": {},
+                        "lists": {},
+                        "grids": {},
+                        "slots": {
+                          "content": {
+                            "id": "n115",
+                            "type": "stack",
+                            "name": "",
+                            "layout": "flex",
+                            "columns": 3,
+                            "dir": "column",
+                            "align": "stretch",
+                            "justify": "start",
+                            "wrap": false,
+                            "size": "fill",
+                            "width": null,
+                            "pin": "none",
+                            "link": null,
+                            "note": "",
+                            "states": [],
+                            "classes": [],
+                            "children": [
+                              {
+                                "id": "n116",
+                                "type": "asset",
+                                "kind": "Text",
+                                "name": "",
+                                "size": "auto",
+                                "width": null,
+                                "pin": "none",
+                                "link": null,
+                                "note": "",
+                                "states": [],
+                                "itemStates": {},
+                                "classes": [],
+                                "props": {},
+                                "text": {
+                                  "text": "未対応の問い合わせ"
+                                },
+                                "lists": {},
+                                "grids": {},
+                                "slots": {}
+                              },
+                              {
+                                "id": "n117",
+                                "type": "asset",
+                                "kind": "Heading",
+                                "name": "",
+                                "size": "auto",
+                                "width": null,
+                                "pin": "none",
+                                "link": null,
+                                "note": "",
+                                "states": [],
+                                "itemStates": {},
+                                "classes": [],
+                                "props": {},
+                                "text": {
+                                  "text": "7"
+                                },
+                                "lists": {},
+                                "grids": {},
+                                "slots": {}
+                              },
+                              {
+                                "id": "n118",
+                                "type": "asset",
+                                "kind": "Badge",
+                                "name": "",
+                                "size": "auto",
+                                "width": null,
+                                "pin": "none",
+                                "link": null,
+                                "note": "",
+                                "states": [],
+                                "itemStates": {},
+                                "classes": [],
+                                "props": {},
+                                "text": {
+                                  "label": "要対応"
+                                },
+                                "lists": {},
+                                "grids": {},
+                                "slots": {}
+                              }
+                            ]
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "id": "n119",
+                    "type": "stack",
+                    "name": "",
+                    "layout": "flex",
+                    "columns": 3,
+                    "dir": "column",
+                    "align": "stretch",
+                    "justify": "start",
+                    "wrap": false,
+                    "size": "auto",
+                    "width": null,
+                    "pin": "none",
+                    "link": null,
+                    "note": "",
+                    "states": [],
+                    "classes": [],
+                    "children": [
+                      {
+                        "id": "n120",
+                        "type": "asset",
+                        "kind": "Tabs",
+                        "name": "",
+                        "size": "auto",
+                        "width": null,
+                        "pin": "none",
+                        "link": null,
+                        "note": "",
+                        "states": [],
+                        "itemStates": {
+                          "items[0]": [
+                            "selected"
+                          ]
+                        },
+                        "classes": [],
+                        "props": {},
+                        "text": {},
+                        "lists": {
+                          "items": [
+                            "最近の登録",
+                            "ログイン履歴",
+                            "エラー"
+                          ]
+                        },
+                        "grids": {},
+                        "slots": {}
+                      },
+                      {
+                        "id": "n121",
+                        "type": "asset",
+                        "kind": "Table",
+                        "name": "",
+                        "size": "auto",
+                        "width": null,
+                        "pin": "none",
+                        "link": null,
+                        "note": "",
+                        "states": [],
+                        "itemStates": {},
+                        "classes": [],
+                        "props": {},
+                        "text": {},
+                        "lists": {
+                          "columns": [
+                            "登録日時",
+                            "名前",
+                            "メールアドレス",
+                            "登録経路"
+                          ]
+                        },
+                        "grids": {
+                          "cells": [
+                            [
+                              "2026/11/13 08:41",
+                              "小林 直人",
+                              "naoto.kobayashi@example.co.jp",
+                              "招待"
+                            ],
+                            [
+                              "2026/11/12 17:03",
+                              "加藤 由美",
+                              "yumi.kato@example.co.jp",
+                              "セルフ登録"
+                            ],
+                            [
+                              "2026/11/12 10:26",
+                              "吉田 翔",
+                              "sho.yoshida@example.co.jp",
+                              "招待"
+                            ],
+                            [
+                              "2026/11/11 15:48",
+                              "山本 恵",
+                              "megumi.yamamoto@example.co.jp",
+                              "一括取り込み"
+                            ]
+                          ]
+                        },
+                        "slots": {}
+                      },
+                      {
+                        "id": "n122",
+                        "type": "stack",
+                        "name": "",
+                        "layout": "flex",
+                        "columns": 3,
+                        "dir": "row",
+                        "align": "stretch",
+                        "justify": "end",
+                        "wrap": false,
+                        "size": "auto",
+                        "width": null,
+                        "pin": "none",
+                        "link": null,
+                        "note": "",
+                        "states": [],
+                        "classes": [],
+                        "children": [
+                          {
+                            "id": "n123",
+                            "type": "asset",
+                            "kind": "Link",
+                            "name": "",
+                            "size": "auto",
+                            "width": null,
+                            "pin": "none",
+                            "link": "s1",
+                            "note": "",
+                            "states": [],
+                            "itemStates": {},
+                            "classes": [],
+                            "props": {},
+                            "text": {
+                              "label": "すべての登録を見る"
+                            },
+                            "lists": {},
+                            "grids": {},
+                            "slots": {}
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "id": "n124",
+                    "type": "stack",
+                    "name": "",
+                    "layout": "flex",
+                    "columns": 3,
+                    "dir": "row",
+                    "align": "start",
+                    "justify": "start",
+                    "wrap": false,
+                    "size": "auto",
+                    "width": null,
+                    "pin": "none",
+                    "link": null,
+                    "note": "",
+                    "states": [],
+                    "classes": [],
+                    "children": [
+                      {
+                        "id": "n125",
+                        "type": "asset",
+                        "kind": "Card",
+                        "name": "",
+                        "size": "fill",
+                        "width": null,
+                        "pin": "none",
+                        "link": null,
+                        "note": "",
+                        "states": [],
+                        "itemStates": {},
+                        "classes": [],
+                        "props": {},
+                        "text": {},
+                        "lists": {},
+                        "grids": {},
+                        "slots": {
+                          "content": {
+                            "id": "n126",
+                            "type": "stack",
+                            "name": "",
+                            "layout": "flex",
+                            "columns": 3,
+                            "dir": "column",
+                            "align": "stretch",
+                            "justify": "start",
+                            "wrap": false,
+                            "size": "fill",
+                            "width": null,
+                            "pin": "none",
+                            "link": null,
+                            "note": "",
+                            "states": [],
+                            "classes": [],
+                            "children": [
+                              {
+                                "id": "n127",
+                                "type": "asset",
+                                "kind": "Heading",
+                                "name": "",
+                                "size": "auto",
+                                "width": null,
+                                "pin": "none",
+                                "link": null,
+                                "note": "",
+                                "states": [],
+                                "itemStates": {},
+                                "classes": [],
+                                "props": {},
+                                "text": {
+                                  "text": "お知らせ"
+                                },
+                                "lists": {},
+                                "grids": {},
+                                "slots": {}
+                              },
+                              {
+                                "id": "n128",
+                                "type": "asset",
+                                "kind": "List",
+                                "name": "",
+                                "size": "auto",
+                                "width": null,
+                                "pin": "none",
+                                "link": null,
+                                "note": "",
+                                "states": [],
+                                "itemStates": {},
+                                "classes": [],
+                                "props": {},
+                                "text": {},
+                                "lists": {
+                                  "items": [
+                                    "11月20日 2:00〜4:00 にメンテナンスを行います",
+                                    "請求書の発行日が毎月1日に変わりました",
+                                    "新しい権限「閲覧者」を追加しました"
+                                  ]
+                                },
+                                "grids": {},
+                                "slots": {}
+                              }
+                            ]
+                          }
+                        }
+                      },
+                      {
+                        "id": "n129",
+                        "type": "asset",
+                        "kind": "Card",
+                        "name": "",
+                        "size": "fill",
+                        "width": null,
+                        "pin": "none",
+                        "link": null,
+                        "note": "",
+                        "states": [],
+                        "itemStates": {},
+                        "classes": [],
+                        "props": {},
+                        "text": {},
+                        "lists": {},
+                        "grids": {},
+                        "slots": {
+                          "content": {
+                            "id": "n130",
+                            "type": "stack",
+                            "name": "",
+                            "layout": "flex",
+                            "columns": 3,
+                            "dir": "column",
+                            "align": "stretch",
+                            "justify": "start",
+                            "wrap": false,
+                            "size": "fill",
+                            "width": null,
+                            "pin": "none",
+                            "link": null,
+                            "note": "",
+                            "states": [],
+                            "classes": [],
+                            "children": [
+                              {
+                                "id": "n131",
+                                "type": "stack",
+                                "name": "",
+                                "layout": "flex",
+                                "columns": 3,
+                                "dir": "row",
+                                "align": "center",
+                                "justify": "between",
+                                "wrap": false,
+                                "size": "auto",
+                                "width": null,
+                                "pin": "none",
+                                "link": null,
+                                "note": "",
+                                "states": [],
+                                "classes": [],
+                                "children": [
+                                  {
+                                    "id": "n132",
+                                    "type": "asset",
+                                    "kind": "Heading",
+                                    "name": "",
+                                    "size": "auto",
+                                    "width": null,
+                                    "pin": "none",
+                                    "link": null,
+                                    "note": "",
+                                    "states": [],
+                                    "itemStates": {},
+                                    "classes": [],
+                                    "props": {},
+                                    "text": {
+                                      "text": "未対応のアラート"
+                                    },
+                                    "lists": {},
+                                    "grids": {},
+                                    "slots": {}
+                                  },
+                                  {
+                                    "id": "n133",
+                                    "type": "asset",
+                                    "kind": "Badge",
+                                    "name": "",
+                                    "size": "auto",
+                                    "width": null,
+                                    "pin": "none",
+                                    "link": null,
+                                    "note": "",
+                                    "states": [],
+                                    "itemStates": {},
+                                    "classes": [],
+                                    "props": {},
+                                    "text": {
+                                      "label": "0件"
+                                    },
+                                    "lists": {},
+                                    "grids": {},
+                                    "slots": {}
+                                  }
+                                ]
+                              },
+                              {
+                                "id": "n134",
+                                "type": "asset",
+                                "kind": "Empty",
+                                "name": "",
+                                "size": "auto",
+                                "width": null,
+                                "pin": "none",
+                                "link": null,
+                                "note": "",
+                                "states": [],
+                                "itemStates": {},
+                                "classes": [],
+                                "props": {},
+                                "text": {
+                                  "message": "未対応のアラートはありません"
+                                },
+                                "lists": {},
+                                "grids": {},
+                                "slots": {}
+                              }
+                            ]
+                          }
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "modals": []
+    }
+  ],
+  "components": [
+    {
+      "id": "c135",
+      "name": "共通ヘッダー",
+      "root": {
+        "id": "n3",
+        "type": "asset",
+        "kind": "Header",
+        "name": "共通ヘッダー",
+        "size": "fill",
+        "width": null,
+        "pin": "none",
+        "link": null,
+        "note": "",
+        "states": [],
+        "itemStates": {},
+        "classes": [],
+        "props": {},
+        "text": {},
+        "lists": {},
+        "grids": {},
+        "slots": {
+          "content": {
+            "id": "n4",
+            "type": "stack",
+            "name": "",
+            "layout": "flex",
+            "columns": 3,
+            "dir": "row",
+            "align": "center",
+            "justify": "between",
+            "wrap": false,
+            "size": "fill",
+            "width": null,
+            "pin": "none",
+            "link": null,
+            "note": "",
+            "states": [],
+            "classes": [],
+            "children": [
+              {
+                "id": "n5",
+                "type": "stack",
+                "name": "",
+                "layout": "flex",
+                "columns": 3,
+                "dir": "row",
+                "align": "center",
+                "justify": "start",
+                "wrap": false,
+                "size": "auto",
+                "width": null,
+                "pin": "none",
+                "link": "s80",
+                "note": "",
+                "states": [],
+                "classes": [],
+                "children": [
+                  {
+                    "id": "n6",
+                    "type": "asset",
+                    "kind": "Icon",
+                    "name": "",
+                    "size": "auto",
+                    "width": null,
+                    "pin": "none",
+                    "link": null,
+                    "note": "",
+                    "states": [],
+                    "itemStates": {},
+                    "classes": [],
+                    "props": {},
+                    "text": {},
+                    "lists": {},
+                    "grids": {},
+                    "slots": {}
+                  },
+                  {
+                    "id": "n7",
+                    "type": "asset",
+                    "kind": "Heading",
+                    "name": "",
+                    "size": "auto",
+                    "width": null,
+                    "pin": "none",
+                    "link": null,
+                    "note": "",
+                    "states": [],
+                    "itemStates": {},
+                    "classes": [],
+                    "props": {},
+                    "text": {
+                      "text": "社内管理コンソール"
+                    },
+                    "lists": {},
+                    "grids": {},
+                    "slots": {}
+                  }
+                ]
+              },
+              {
+                "id": "n8",
+                "type": "stack",
+                "name": "",
+                "layout": "flex",
+                "columns": 3,
+                "dir": "row",
+                "align": "center",
+                "justify": "start",
+                "wrap": false,
+                "size": "auto",
+                "width": null,
+                "pin": "none",
+                "link": null,
+                "note": "",
+                "states": [],
+                "classes": [],
+                "children": [
+                  {
+                    "id": "n9",
+                    "type": "asset",
+                    "kind": "Text",
+                    "name": "",
+                    "size": "auto",
+                    "width": null,
+                    "pin": "none",
+                    "link": null,
+                    "note": "",
+                    "states": [],
+                    "itemStates": {},
+                    "classes": [],
+                    "props": {},
+                    "text": {
+                      "text": "山田 太郎（管理者）"
+                    },
+                    "lists": {},
+                    "grids": {},
+                    "slots": {}
+                  },
+                  {
+                    "id": "n10",
+                    "type": "asset",
+                    "kind": "Link",
+                    "name": "",
+                    "size": "auto",
+                    "width": null,
+                    "pin": "none",
+                    "link": null,
+                    "note": "",
+                    "states": [],
+                    "itemStates": {},
+                    "classes": [],
+                    "props": {},
+                    "text": {
+                      "label": "ログアウト"
+                    },
+                    "lists": {},
+                    "grids": {},
+                    "slots": {}
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "c137",
+      "name": "グローバルメニュー",
+      "root": {
+        "id": "n12",
+        "type": "asset",
+        "kind": "Sidebar",
+        "name": "グローバルメニュー",
+        "size": "fill",
+        "width": null,
+        "pin": "none",
+        "link": null,
+        "note": "",
+        "states": [],
+        "itemStates": {},
+        "classes": [],
+        "props": {},
+        "text": {},
+        "lists": {},
+        "grids": {},
+        "slots": {
+          "content": {
+            "id": "n13",
+            "type": "stack",
+            "name": "",
+            "layout": "flex",
+            "columns": 3,
+            "dir": "column",
+            "align": "stretch",
+            "justify": "start",
+            "wrap": false,
+            "size": "fill",
+            "width": null,
+            "pin": "none",
+            "link": null,
+            "note": "",
+            "states": [],
+            "classes": [],
+            "children": [
+              {
+                "id": "n14",
+                "type": "asset",
+                "kind": "Nav",
+                "name": "",
+                "size": "auto",
+                "width": null,
+                "pin": "none",
+                "link": null,
+                "note": "",
+                "states": [],
+                "itemStates": {},
+                "classes": [],
+                "props": {
+                  "dir": "column"
+                },
+                "text": {},
+                "lists": {
+                  "items": [
+                    "ダッシュボード",
+                    "ユーザー管理",
+                    "組織設定",
+                    "請求・お支払い",
+                    "操作ログ"
+                  ]
+                },
+                "grids": {},
+                "slots": {}
+              }
+            ]
+          }
+        }
+      }
+    }
+  ]
+}
